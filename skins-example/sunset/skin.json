@@ -1,0 +1,14 @@
+{
+  "name": "Sunset",
+  "author": "you",
+  "tokens": {
+    "--accent-rgb": "255 120 60",
+    "--bg": "#120a08",
+    "--shell-1": "#2a1810",
+    "--shell-2": "#201009",
+    "--shell-3": "#170b06",
+    "--titlebar-1": "#321c12",
+    "--titlebar-2": "#22130b",
+    "--inset": "#0a0402"
+  }
+}

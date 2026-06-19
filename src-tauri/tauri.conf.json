@@ -1,0 +1,41 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "Ferrite",
+  "version": "0.1.0",
+  "identifier": "com.ferrite.app",
+  "build": {
+    "frontendDist": "../src"
+  },
+  "app": {
+    "withGlobalTauri": true,
+    "windows": [
+      {
+        "label": "main",
+        "title": "Ferrite",
+        "width": 330,
+        "height": 410,
+        "minWidth": 330,
+        "minHeight": 410,
+        "resizable": true,
+        "decorations": false,
+        "transparent": false,
+        "dragDropEnabled": true,
+        "backgroundColor": "#0a0a0f"
+      }
+    ],
+    "security": {
+      "csp": "default-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self' data:"
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": "all",
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.ico"
+    ]
+  }
+}

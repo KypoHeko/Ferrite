@@ -1,0 +1,14 @@
+{
+  "name": "Magenta",
+  "author": "Ferrite",
+  "tokens": {
+    "--accent-rgb": "255 94 148",
+    "--bg": "#0f0810",
+    "--shell-1": "#241626",
+    "--shell-2": "#1c1220",
+    "--shell-3": "#150d18",
+    "--titlebar-1": "#2c1a30",
+    "--titlebar-2": "#1f1322",
+    "--inset": "#0a0410"
+  }
+}

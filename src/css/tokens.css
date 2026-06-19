@@ -1,0 +1,63 @@
+/* ============================================================
+   tokens.css — дизайн-токены Ferrite.
+   Это ПУБЛИЧНЫЙ API для авторов скинов: скин переопределяет
+   переменные из блока «СКИНЯЕМЫЕ ТОКЕНЫ», остального не касается.
+   ============================================================ */
+
+@font-face{
+  font-family:'Geist Mono';
+  src:url('../assets/fonts/geist-mono-latin-wght-normal.woff2') format('woff2');
+  font-weight:100 900; font-style:normal; font-display:swap;
+}
+@font-face{
+  font-family:'Geist Sans';
+  src:url('../assets/fonts/geist-latin-wght-normal.woff2') format('woff2');
+  font-weight:100 900; font-style:normal; font-display:swap;
+}
+
+:root{
+  /* ===== СКИНЯЕМЫЕ ТОКЕНЫ (их меняет skin.json) ===== */
+
+  /* Акцент задаётся КОМПОНЕНТАМИ RGB (через пробел, без запятых).
+     Одна эта строка перекрашивает весь интерфейс — все оттенки
+     и прозрачности выводятся из неё. Пример для скина: 255 94 148 */
+  --accent-rgb: 0 255 136;
+
+  /* Поверхности корпуса */
+  --bg:         #0a0a0f;   /* фон окна */
+  --shell-1:    #1a1a2e;   /* градиент корпуса: верх */
+  --shell-2:    #16162a;   /*                    середина */
+  --shell-3:    #12121f;   /*                    низ */
+  --titlebar-1: #2a2a3e;   /* градиент заголовка: верх */
+  --titlebar-2: #1e1e32;   /*                     низ */
+  --inset:      #050510;   /* «стекло» LCD и визуализатора */
+  --panel-bg:   rgb(0 0 0 / .30);  /* фон эквалайзера и плейлиста */
+
+  /* Фоновое изображение корпуса (asset). none = только градиент.
+     Скин может подставить url("data:image/...") через assets. */
+  --bg-image:   none;
+
+  /* Цвет опасного действия (наведение на «Закрыть») */
+  --danger-rgb: 255 80 80;
+
+  /* Шрифты */
+  --font-mono:'Geist Mono',ui-monospace,'Courier New',monospace;
+  --font-sans:'Geist Sans',system-ui,sans-serif;
+
+  /* ===== ПРОИЗВОДНЫЕ (обычно скином не трогаются) =====
+     Считаются из --accent-rgb на лету, поэтому смена акцента
+     автоматически пересчитывает все оттенки ниже. */
+  --accent:   rgb(var(--accent-rgb));
+  --muted:    rgb(var(--accent-rgb) / .50);
+  --muted-2:  rgb(var(--accent-rgb) / .40);
+  --muted-3:  rgb(var(--accent-rgb) / .30);
+  --line:     rgb(var(--accent-rgb) / .08);
+  --danger:   rgb(var(--danger-rgb));
+
+  /* «Софт»-кнопка (Сброс EQ) — приглушённый зелёный корпус кнопки */
+  --btn-soft-bg:       rgb(0 60 30 / .40);
+  --btn-soft-bg-hover: rgb(0 80 40 / .60);
+
+  /* ===== ЛЕЙАУТ (к оформлению не относится) ===== */
+  --pl-min:112px;
+}

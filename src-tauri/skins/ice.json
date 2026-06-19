@@ -1,0 +1,14 @@
+{
+  "name": "Ice",
+  "author": "Ferrite",
+  "tokens": {
+    "--accent-rgb": "90 200 255",
+    "--bg": "#05090f",
+    "--shell-1": "#10202e",
+    "--shell-2": "#0c1824",
+    "--shell-3": "#08121c",
+    "--titlebar-1": "#142838",
+    "--titlebar-2": "#0e1c2a",
+    "--inset": "#03080f"
+  }
+}

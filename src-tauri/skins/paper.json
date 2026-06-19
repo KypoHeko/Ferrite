@@ -1,0 +1,16 @@
+{
+  "name": "Paper",
+  "author": "Ferrite",
+  "tokens": {
+    "--accent-rgb": "201 59 31",
+    "--danger-rgb": "178 49 31",
+    "--bg": "#F0ECE2",
+    "--shell-1": "#F5F1E8",
+    "--shell-2": "#F0ECE2",
+    "--shell-3": "#E9E3D6",
+    "--titlebar-1": "#FCFCFA",
+    "--titlebar-2": "#F4F0E7",
+    "--inset": "#D8D2BF",
+    "--panel-bg": "#E0DCCC"
+  }
+}

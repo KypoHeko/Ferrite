@@ -1,0 +1,14 @@
+{
+  "name": "Amber",
+  "author": "Ferrite",
+  "tokens": {
+    "--accent-rgb": "255 176 0",
+    "--bg": "#0d0a05",
+    "--shell-1": "#241a0e",
+    "--shell-2": "#1c140a",
+    "--shell-3": "#140e06",
+    "--titlebar-1": "#2e2212",
+    "--titlebar-2": "#20180c",
+    "--inset": "#0a0600"
+  }
+}
